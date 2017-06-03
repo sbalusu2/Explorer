@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Explorer</title>
+
+  <link rel="stylesheet" href="animate.css">
+  <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src = "jquery.fullpage-menu.js"></script>
+    <link rel="stylesheet" href="fullpage-menu.css">
+    <link rel="stylesheet" href="explorer.css">
+
+  </script>
+</head>
+<body>
+
+
+    <div class="sidemenu">
+      <ul class="fm-first-level">
+        <li><a href="#menu1">Beautiful Earth</a></li>
+      </ul>
+      <nav id="menu1" class="active">
+        <a target="_blank" href="#">
+          <span class="subtitle">Panorama</span>
+          Beautiful
+        </a>
+      </nav>
+      <nav id="menu1" class="active">
+        <a target="_blank" href="#">
+          <span class="subtitle">Shuffle Images</span>
+          Lots of pics
+        </a>
+      </nav>
+      <nav id="menu1" class="active">
+        <a target="_blank" href="#">
+          <span class="subtitle">Flipping gallery</span>
+          pretty cool stuff
+        </a>
+      </nav>
+  <script >
+
+  $(".sidemenu").fullpageMenu({
+  openButton: "Menu",        // This option allows you to define the content of the open menu button. The default value is "Menu"
+  closeButton: "Close X",    // This option allows you to define the content of the close menu button. The default value is "Close X"
+  animationSpeed: 100,       // This option lets you control the speed of the animation of each navigation items. The option accepts milliseconds. The default value is 100.
+  autoNumber: true,          // This option lets you enable/disable to automatic numbering on menu items. The default value is true.
+  animation: "fadeInLeft"    // This option lets you define what type of animation you want. Available options are "fadeInLeft", "fadeInRight", "fadeInUp" and "fadeInDown".
+});
+</script>
+<script>
+$(".sidemenu").openMenu();
+$(".sidemenu").closeMenu();
+  </script>
+</body>
+</html>
