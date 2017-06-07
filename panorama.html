@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Panorama Viewer</title>
+
+  <link rel="stylesheet" href="animate.css">
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src = "jquery.panorama_viewer.js"></script>
+  <link rel="stylesheet" href="panorama_viewer.css">
+  <link rel="stylesheet" href="explorer.css">
+
+</head>
+<body>
+
+<!--  <div class="panorama">
+    <img class = "center fit" src="panimage.jpg">
+  </div>
+</div> -->
+
+<div class="panorama pv-container" style = "height:100vh; width:100wv;">
+	   <img src="https://static.pexels.com/photos/26206/pexels-photo.jpg" class="pv-pano" style="display: none;">
+  	  <div class="pv-overlay" style="display: block;"><i class="pvicon-overlay"></i>
+      </div>
+</div>
+
+<div class="panorama pv-container" style = "height:100vh; width:100wv;">
+	   <img src="https://static.pexels.com/photos/127753/pexels-photo-127753.jpeg" class="pv-pano" style="display: none;">
+  	  <div class="pv-overlay" style="display: block;"><i class="pvicon-overlay"></i>
+      </div>
+</div>
+
+<div class="panorama pv-container"style = "height:100vh; width:100wv;">
+	   <img src="https://static.pexels.com/photos/12974/pexels-photo-12974.jpeg" class="pv-pano" style="display: none;">
+  	  <div class="pv-overlay" style="display: block;"><i class="pvicon-overlay"></i>
+      </div>
+</div>
+
+<div class="panorama pv-container" style = "height:100vh; width:100wv;">
+	   <img src="https://static.pexels.com/photos/207385/pexels-photo-207385.jpeg" class="pv-pano" style="display: none;">
+  	  <div class="pv-overlay" style="display: block;"><i class="pvicon-overlay"></i>
+      </div>
+</div>
+<div class="panorama pv-container" style = "height:100vh; width:100wv;">
+	   <img src="https://static.pexels.com/photos/141784/pexels-photo-141784.jpeg" class="pv-pano" style="display: none;">
+  	  <div class="pv-overlay" style="display: block;"><i class="pvicon-overlay"></i>
+      </div>
+</div>
+<div class="panorama pv-container"  style = "height:100vh; width:100wv;">
+	   <img src="https://static.pexels.com/photos/68633/pexels-photo-68633.jpeg" class="pv-pano" style="display: none;">
+  	  <div class="pv-overlay" style="display: block;"><i class="pvicon-overlay"></i>
+      </div>
+</div>
+
+<!--  <div class="panorama pv-container" style = "height:575px; width:2314px;">
+	   <img src="https://static.pexels.com/photos/68633/pexels-photo-68633.jpeg" class="pv-pano" style="display: none;">
+  	  <div class="pv-overlay" style="display: block;"><i class="pvicon-overlay"></i>
+      </div>
+</div>
+-->
+  <script type="text/javascript">
+
+  $(".panorama").panorama_viewer({
+    repeat: true,              // The image will repeat when the user scroll reach the bounding box. The default value is false.
+    direction: "horizontal",    // Let you define the direction of the scroll. Acceptable values are "horizontal" and "vertical". The default value is horizontal
+    animationTime: 700,         // This allows you to set the easing time when the image is being dragged. Set this to 0 to make it instant. The default value is 700.
+    easing: "ease-out",         // You can define the easing options here. This option accepts CSS easing options. Available options are "ease", "linear", "ease-in", "ease-out", "ease-in-out", and "cubic-bezier(...))". The default value is "ease-out".
+    overlay: true               // Toggle this to false to hide the initial instruction overlay
+  });
+  </script>
+</body>
+</html>

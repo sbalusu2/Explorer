@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flipping Gallery</title>
+
+    <link rel="stylesheet" href="animate.css">
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src = "jquery.flipping_gallery.js"></script>
+    <link rel="stylesheet" href="flipping_gallery.css">
+    <link rel="stylesheet" href="explorer.css">
+
+  </head>
+  <body>
+
+    <div class="gallery">
+       <a href="#"><img style="height:90vh; width:100vw;" data-caption="This is located in Earth" src="https://static.pexels.com/photos/26206/pexels-photo.jpg"></a>
+       <a href="#"><img style="height:100vh; width:100vw;" data-caption="ASKDJAKSJDKAJSDHKJASHDKJAHSDKJAHSDKJH" src="https://static.pexels.com/photos/127753/pexels-photo-127753.jpeg"></a>
+       <a href="#"><img style="height:100vh; width:100vw;" data-caption="..." src="https://static.pexels.com/photos/12974/pexels-photo-12974.jpeg"></a>
+       <a href="#"><img style="height:100vh; width:100vw;" data-caption="..."src="https://static.pexels.com/photos/207385/pexels-photo-207385.jpeg"></a>
+       <a href="#"><img style="height:100vh; width:100vw;" data-caption="..." src="https://static.pexels.com/photos/141784/pexels-photo-141784.jpeg"></a>
+     </div>
+
+
+
+
+
+    <script>
+
+    $(".gallery").flipping_gallery({
+  direction: "forward", // This is will set the flipping direction when the gallery is clicked. Options available are "forward", or "backward". The default value is forward.
+  selector: "> a", // This will let you change the default selector which by default, will look for <a> tag and generate the gallery from it. This option accepts normal CSS selectors.
+  spacing: 10, // You can set the spacing between each photo in the gallery here. The number represents the pixels between each photos. The default value is 10.
+  showMaximum: 15, // This will let you limit the number of photos that will be in the viewport. In case you have a gazillion photos, this is perfect to hide all those photos and limit only a few in the viewport.
+  enableScroll: true, // Set this to false if you don't want the plugin to override your scrolling behavior. The default value is true.
+  flipDirection: "bottom", // You can now set which direction the picture will flip to. Available options are "left", "right", "top", and "bottom". The default value is bottom.
+  autoplay: false // You can set the gallery to autoplay by defining the interval here. This option accepts value in milliseconds. The default value is false.
+});
+    </script>
+  </body>
+</html>

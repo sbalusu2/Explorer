@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Shuffle Images</title>
+
+  <link rel="stylesheet" href="animate.css">
+  <script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+  <script type="text/javascript" src = "jquery.shuffle-images.js"></script>
+  <link rel="stylesheet" href="explorer.css">
+</head>
+
+<body>
+
+  <div class="shuffle-me">
+    <img src="https://static.pexels.com/photos/26206/pexels-photo.jpg">
+    <img src="https://static.pexels.com/photos/127753/pexels-photo-127753.jpeg">
+    <img src="https://static.pexels.com/photos/12974/pexels-photo-12974.jpeg">
+  </div>
+
+  <script>
+  $(".shuffle-me").shuffleImages({
+    trigger: "imageMouseMove",     // Choose which type of trigger you want here. Available options are "imageMouseMove", "imageHover", "documentMouseMove", and "documentScroll". "imageMouseMove" will trigger when your mouse over the image and move your cursor. "imageHover" will trigger when you mouse over without moving your cursor. "documentMouseMove" will trigger when cursor is being moved anywhere on the page. "documentScroll" will trigger when you scroll the page. The default value is "imageMouseMove"
+    triggerTarget: false,          // For "imageMouseMove", and "imageHover" only, you can set which element to trigger the image shuffle when mouse over. For example, if you want a container ".main" to trigger an image shuffle instead of the image itself, put $(".main") for this option. Default value is false.
+    mouseMoveTrigger: 50,          // For "imageMouseMove" only, you can set how many pixels you have to move in order to trigger one image shuffle. The lower the faster. The default value is 50.
+    hoverTrigger: 200,             // For "imageHover" only, you can set how long you have to hover the image until it shuffles to other images. The option accepts milliseconds without unit. The default value is 200.
+    scrollTrigger: 100,          // For "documentScroll" only, you can set how many pixels you have to scroll to see the image shuffle. The default value is 100.
+    target: "> img"              // In case you have a complete HTML structure, you can set your own custom selector to your images here. The default value is "> img" which means images that are directly under the "shuffle-me" will be used to shuffle.
+  });
+
+  </script>
+</body>
+</html>

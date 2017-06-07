@@ -14,45 +14,73 @@
     <link rel="stylesheet" href="explorer.css">
 
   </script>
+
+  <style>
+.hidden{
+    display:none;
+}
+
+.unhidden{
+    display:block;
+}
+</style>
 </head>
 <body>
+<!-- Background image other option https://www.pexels.com/photo/dock-sky-water-landscape-9579/ -->
+<h1>Explorer</h1>
+<p>Travel the world from your seat</p>
+<button type="button" name="button" id = "menuOpenButton" onClick = "unhide()" >Menu</button>
 
-
-    <div class="sidemenu">
+   <div id = "hideMe" class="sidemenu hidden">
       <ul class="fm-first-level">
         <li><a href="#menu1">Beautiful Earth</a></li>
       </ul>
       <nav id="menu1" class="active">
-        <a target="_blank" href="#">
+        <a target="_blank" href="panorama.html" data-fm-index="I" class="animated fadeInLeft" style="display: block;">
           <span class="subtitle">Panorama</span>
           Beautiful
         </a>
       </nav>
       <nav id="menu1" class="active">
-        <a target="_blank" href="#">
+        <a target="_blank" href="shuffle.html" data-fm-index="II" class="animated fadeInLeft" style="display: block;">
           <span class="subtitle">Shuffle Images</span>
           Lots of pics
         </a>
       </nav>
-      <nav id="menu1" class="active">
-        <a target="_blank" href="#">
+      <nav id="menu1" class="active" >
+        <a target="_blank" href="flipping.HTML" data-fm-index="II" class="animated fadeInLeft" >
           <span class="subtitle">Flipping gallery</span>
           pretty cool stuff
         </a>
       </nav>
-  <script >
-
+      <script type="text/javascript">
+          function unhide() {
+            var counter = 1;
+            if (counter %2 ==0  ){
+              document.getElementById("hideMe").classList.add('unhidden');
+              document.getElementById("hideMe").classList.remove('hidden');
+              counter++;
+            }
+            else {
+            document.getElementById("hideMe").classList.add('unhidden');
+            document.getElementById("hideMe").classList.remove('hidden');
+            counter++;
+            }
+          }
+      </script>
+<script>
+$( "#menuOpenButton" ).click(function() {
   $(".sidemenu").fullpageMenu({
-  openButton: "Menu",        // This option allows you to define the content of the open menu button. The default value is "Menu"
-  closeButton: "Close X",    // This option allows you to define the content of the close menu button. The default value is "Close X"
-  animationSpeed: 100,       // This option lets you control the speed of the animation of each navigation items. The option accepts milliseconds. The default value is 100.
-  autoNumber: true,          // This option lets you enable/disable to automatic numbering on menu items. The default value is true.
-  animation: "fadeInLeft"    // This option lets you define what type of animation you want. Available options are "fadeInLeft", "fadeInRight", "fadeInUp" and "fadeInDown".
+    openButton: "Sai",        // This option allows you to define the content of the open menu button. The default value is "Menu"
+    closeButton: "Balusu X",    // This option allows you to define the content of the close menu button. The default value is "Close X"
+    animationSpeed: 100,       // This option lets you control the speed of the animation of each navigation items. The option accepts milliseconds. The default value is 100.
+    autoNumber: true,          // This option lets you enable/disable to automatic numbering on menu items. The default value is true.
+    animation: "fadeInLeft"    // This option lets you define what type of animation you want. Available options are "fadeInLeft", "fadeInRight", "fadeInUp" and "fadeInDown".
+  });
+  $(".sidemenu").openMenu();
+  $(".sidemenu").closeMenu();
 });
 </script>
-<script>
-$(".sidemenu").openMenu();
-$(".sidemenu").closeMenu();
-  </script>
+
 </body>
 </html>

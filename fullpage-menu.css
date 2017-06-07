@@ -68,7 +68,11 @@ body.fm-activate {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
+body{
+  background-image: url("https://static.pexels.com/photos/2855/landscape-mountains-nature-lake.jpg");
+  background-size:cover;
 
+}
 body .fm-button {
   position: fixed;
   top: 20px;
@@ -78,7 +82,7 @@ body .fm-button {
   font-weight: bold;
   padding: 2px 5px;
   z-index: 102;
-  background-color: green;
+  background-color: teal;
 }
 
 body .fm-button:hover {
@@ -97,7 +101,7 @@ body.fm-activate .fm-overlay {
   list-style: none;
   width: 100%;
   text-align: right;
-  background-color: blue;
+
 }
 .fm-menu .fm-first-level > li{
   display: inline-block;
@@ -406,6 +410,10 @@ body.fm-activate .fm-overlay {
   }
 }
 .sidemenu{
-  background-color: red;
+  background-color: white;
   color: blue;
+}
+.fixImageProperties{
+  height: 100%;
+  width: 100%;
 }
