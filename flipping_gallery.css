@@ -54,3 +54,39 @@ body {
   -o-transition: all 0.5s;
   transition: all 0.5s ease-in-out;
 }
+
+
+.button2{
+  left: 50%;
+  display: inline-block;
+  position:absolute;
+
+}
+.button1{
+  left: 40%;
+  top: 80%;
+  z-index: 100;
+  display: inline-block;
+  position:absolute;
+  align-items: center !important;
+}
+.gallery{
+  height: 80%;
+  width: 100%;
+  position: absolute;
+}
+
+.center{
+  text-align: center;
+  vertical-align: middle;
+}
+.centerButton{
+  display:block; /* change this from inline-block */
+   width:20%; /* setting the width */
+   margin:0 auto; /* this will center  it */
+}
+.buttonPositioning{
+  left:50%;
+  top: 1000%;
+  position: absolute;
+}

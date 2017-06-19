@@ -68,23 +68,20 @@ body.fm-activate {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-body{
-  background-image: url("https://static.pexels.com/photos/2855/landscape-mountains-nature-lake.jpg");
-  background-size:cover;
-
-}
-body .fm-button {
+body .fm-button {  /*This is the CSS that deals with the button on the top right corner*/
   position: fixed;
   top: 20px;
   right: 20px;
-  font-size: 12px;
-  color: white;
+  font-size: 16px;
+  color:  #55acee;
   font-weight: bold;
   padding: 2px 5px;
   z-index: 102;
-  background-color: teal;
-}
+  font-family: 'Roboto Slab', serif;
+  text-decoration: none;
 
+}
+/*Deals with the hover of the menu button on top right*/
 body .fm-button:hover {
   border-bottom: 2px solid white;
   color: white;
@@ -95,6 +92,7 @@ body.fm-activate .fm-overlay {
   visibility: visible;
 }
 
+/* Deals with the text on the top right of menu */
 .fm-menu .fm-first-level {
   padding: 20px 0;
   margin: 0;
@@ -103,6 +101,7 @@ body.fm-activate .fm-overlay {
   text-align: right;
 
 }
+/* Deals with the number and text on the top right of menu */
 .fm-menu .fm-first-level > li{
   display: inline-block;
   font-weight: bold;
@@ -110,28 +109,33 @@ body.fm-activate .fm-overlay {
   letter-spacing: 1px;
   font-size: 16px;
 }
-
+/* Deals with the text on the top right of menu */
 .fm-menu .fm-first-level > li a {
   color: #333;
   padding: 10px 10px;
+text-decoration: none !important;
   opacity: 0.3;
   -webkit-transition: opacity 0.5s ease-in-out;
   -moz-transition: opacity 0.5s ease-in-out;
   -o-transition: opacity 0.5s ease-in-out;
   transition: opacity 0.5s ease-in-out;
 }
-
+/* Deals with the text on the top right of menu */
 .fm-menu .fm-first-level > li a:hover {
   opacity: 0.5;
+  text-decoration: underline;
+  color: #A79A74;
 }
-
+/* Deals with the text on the top right of menu */
 .fm-menu .fm-first-level > li.active a, .fm-menu .fm-first-level > li.active a:hover {
   opacity: 1;
 }
+/* Deals with the space between the number and the text on the top right of menu */
 .fm-menu .fm-first-level > li a[data-fm-index] {
   position: relative;
   padding-left: 35px;
 }
+/* Deals with the number on the top right of menu */
 .fm-menu .fm-first-level > li a[data-fm-index]:after {
   content: attr(data-fm-index);
   position: absolute;
@@ -144,7 +148,7 @@ body.fm-activate .fm-overlay {
   font-style: italic;
 }
 
-.fm-nav > a {
+.fm-nav > a { /*This is the CSS that deals with the large bold text in the menu  */
   line-height: 100%;
   display: none;
   padding: 35px 0;
@@ -160,6 +164,7 @@ body.fm-activate .fm-overlay {
   -moz-transition: color 0.5s ease-in-out;
   -o-transition: color 0.5s ease-in-out;
   transition: color 0.5s ease-in-out;
+  text-decoration: none !important;
 }
 
 .fm-nav > a.animated {
@@ -170,20 +175,22 @@ body.fm-activate .fm-overlay {
   animation-fill-mode: both;
 }
 
-.fm-nav > a .subtitle{
+.fm-nav > a .subtitle{  /*This is the CSS that deals with the small text in the menu  */
   margin-bottom: -5px;
   font-family: georgia;
+  font-family: 'Tangerine', cursive;
   font-style: italic;
   color: #A79A74;
   font-weight: normal;
   letter-spacing: 0;
   text-transform: none;
   display: block;
-  font-size: 18px;
+  font-size: 30px;
   -webkit-transition: color 0.5s ease-in-out;
   -moz-transition: color 0.5s ease-in-out;
   -o-transition: color 0.5s ease-in-out;
   transition: color 0.5s ease-in-out;
+  text-decoration: none !important;
 }
 
 .fm-nav > a:hover {
@@ -409,10 +416,7 @@ body.fm-activate .fm-overlay {
     padding: 0 25px;
   }
 }
-.sidemenu{
-  background-color: white;
-  color: blue;
-}
+
 .fixImageProperties{
   height: 100%;
   width: 100%;
